@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
  
-int min(int a,int b){
+int min(int a,int b){ //zero와 first 중 최소 값
     if(a<b){
         return a;
     }
@@ -19,7 +19,7 @@ int main(void){
     int first = 0; //연속된 '1'구간의 개수
     bool is_zero = false;
     for(int i = 0;i<str.size();i++){
-       if(i == 0){
+       if(i == 0){ 
            if(str[i] == '0'){
                is_zero = true;
            }

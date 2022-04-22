@@ -8,7 +8,7 @@ vector<int> graph[1000];
 int parent[1000]; //부모 노드의 대한 정보
 bool visited[1000];
 int Remove; //제거 할 노드
-int leaf; //리프노드
+int leaf; //루트 노드
  
 void dfs(int start){
     if(start == parent[Remove]){ //현재 삭제노드의 부모인 경우
@@ -52,7 +52,7 @@ int main(void){
         2의 부모노드인 1을 pop해줘야 한다
         */
 
-    if(Remove == leaf){ //제거대상이 리프노드일 경우
+    if(Remove == leaf){ //제거대상이 루트노드일 경우
         cout << '0';
     }
     else{

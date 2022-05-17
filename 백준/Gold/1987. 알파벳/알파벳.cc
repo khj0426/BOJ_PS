@@ -50,10 +50,9 @@ void dfs(int x,int y,int depth){
 int main(void){
      cin >> r >> c;
     for (int i = 0; i < r; i++) {
-           string s;
-           cin >> s;
+           
         for (int j = 0; j < c; j++) {
-            Map[i][j]=s[j];
+            cin >> Map[i][j];
         }
     }
     alpha[Map[0][0]-'A'] = true;

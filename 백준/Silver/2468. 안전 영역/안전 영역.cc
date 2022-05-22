@@ -2,6 +2,9 @@
 #include <vector>
 #include <algorithm>
 #define MAX 110
+
+//비가 아예 오지 않는 경우도 고려해야 함
+
 using namespace std;
 int max(int a,int b){
     if(a>b){
@@ -67,7 +70,7 @@ int main(void){
  
             }
         }
- 
+
             ans = max(Count,ans);
             Count = 0;
             height++;

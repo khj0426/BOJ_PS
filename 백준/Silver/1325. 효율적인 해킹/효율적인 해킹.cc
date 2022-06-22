@@ -27,9 +27,7 @@ void init(){
 }
 void dfs(int start){
 
-   if(visited[start]){
-       return;
-   }
+ 
    
     visited[start] = true;
     for(int i = 0;i<graph[start].size();i++){
